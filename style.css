@@ -1,0 +1,277 @@
+/*                                              = CSS UNIVERSAL =
+As configurações de CSS são válidas para todas as Páginas (index.html, produtos.html, contato.html). */
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+	
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 70vw;
+	min-width: 730px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	background: url("img/bg.jpg");
+	padding: 40px 0;
+	height: 100px;
+}
+
+footer > img 
+	{
+		width: 90px;
+		height: 98%;
+	}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 20px 0 0;
+}
+
+footer p > a {
+	text-decoration: none;
+	color: #a4d6d6;
+}
+
+/* = CSS DA PAGINA (index.html) = */
+
+.index-main {
+	background: linear-gradient(white,rgba(199, 129, 129, 0.466),rgb(101, 100, 196));
+}
+
+.banner {
+    width:100%;
+}
+
+.principal {
+	width: 940px;
+	margin: 0 auto;	
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.beneficios {	
+	padding: 3em 0;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+	font-size: 20px;
+}
+
+.itens:first-child {
+	font-weight: bold;
+	color: rgb(72, 43, 202);
+}
+
+.itens:before {
+	content: "🟅 ";
+	color: rgb(214, 12, 12);
+	}
+
+.imagem-beneficios {
+    width: 60%;
+	box-shadow: 10px 10px 25px #000000be;
+	transition: 1.5s;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.95;
+	transform: scale(1.05);
+	box-shadow: -10px -10px 25px #000000be;
+	border-radius: 0px 25px 90px 20px;
+	
+}
+
+.mapa {	
+	padding: 3em 0;
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;	
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+
+/* = CSS DA PÁGINA (produtos.html) = */
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* = CSS DA PAGINA (contato.html) = */
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {	
+	margin: 20px 0px 40px;
+}
+
+thead {
+	background: #CCC;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid rgb(65, 50, 50);
+	padding: 8px 8px;
+	text-align: center;
+}
